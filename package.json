@@ -1,0 +1,24 @@
+{
+  "name": "generator-wshang",
+  "version": "1.0.0",
+  "description": "react",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elowes/generator-wshang.git"
+  },
+  "keywords": [
+    "react",
+    "yeoman-generator"
+  ],
+  "author": "kaijun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elowes/generator-wshang/issues"
+  },
+  "homepage": "https://github.com/elowes/generator-wshang#readme",
+  "dependencies": {
+    "yeoman-generator": "^3.1.0"
+  }
+}
