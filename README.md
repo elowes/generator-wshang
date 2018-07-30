@@ -1,2 +1,10 @@
 # generator-wshang
-前端开发React技术栈脚手架
+
+```
+yarn add generator-wshang
+```
+---
+> this will install yo temporary and run it, also you can install `yo` globally.
+```
+npx yo wshang
+```
