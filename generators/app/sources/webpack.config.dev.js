@@ -37,6 +37,20 @@ config.module.rules = config.module.rules.concat([
       },
       'less-loader'
     ]
+  },
+  {
+    test: /\.scss$/,
+    use: [
+      'style-loader',
+      {
+        loader: 'css-loader',
+        options: {
+          modules: true,
+          localIdentName: '[path][local]-[hash:base64:5]'
+        }
+      },
+      'sass-loader'
+    ]
   }
 ])
 config.externals = {
