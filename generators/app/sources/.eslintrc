@@ -6,6 +6,7 @@
     "react"
   ],
   "rules": {
+    "comma-dangle": "off",
     "import/no-cycle": "off",
     "jsx-a11y/click-events-have-key-events": "off",
     "jsx-a11y/no-noninteractive-element-interactions": "off",

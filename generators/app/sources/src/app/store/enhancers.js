@@ -6,7 +6,7 @@ const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose; 
 
 function createEnhancer() {
   return composeEnhancer(
-    middlewares,
+    middlewares
   );
 }
 

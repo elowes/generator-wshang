@@ -1,18 +1,16 @@
 import { bindActionCreators } from 'redux';
 import PropTypes from 'prop-types';
 import React, { PureComponent } from 'react';
-import { message } from 'antd';
 import { replace } from 'connected-react-router';
 
 import { connect } from '../../index';
 import bindActions from '../../actions';
 
-
-import styles from './index.less';
+import styles from './index.scss';
 
 @connect(
   state => ({ ...state }),
-  dispatch => ({ dispatch, actions: bindActionCreators(bindActions, dispatch) }),
+  dispatch => ({ dispatch, actions: bindActionCreators(bindActions, dispatch) })
 )
 export default class Page extends PureComponent {
   static propTypes = {
@@ -20,32 +18,21 @@ export default class Page extends PureComponent {
       loadData: PropTypes.func,
     }).isRequired,
     dispatch: PropTypes.func.isRequired,
-    res: PropTypes.string.isRequired,
-    query: PropTypes.shape({}),
-  }
-
-  static defaultProps = {
-    query: {},
+    res: PropTypes.string.isRequired
   }
 
   componentDidMount() {
     const { actions, dispatch } = this.props;
-    actions.loadData('Hello World.');
-    dispatch(replace('?test=true'));
-    message.success('success');
+    actions.loadData('hello wshang.');
+    dispatch(replace('?hello=wshang'));
   }
 
   render() {
-    const { res, query } = this.props;
-    return [
-      <div className={styles.container} key="res">
+    const { res } = this.props;
+    return (
+      <div className={styles.header}>
         {res}
-      </div>,
-      <pre key="query">
-        {
-          query && JSON.stringify(query, null, 2)
-        }
-      </pre>,
-    ];
+      </div>
+    );
   }
 }

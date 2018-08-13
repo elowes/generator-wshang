@@ -8,7 +8,7 @@ import createEnhancers from './enhancers';
 function configStore() {
   const store = createStore(
     connectRouter(history)(rootReduer),
-    createEnhancers(),
+    createEnhancers()
   );
   if (module.hot) {
     module.hot.accept('../reducers', () => {

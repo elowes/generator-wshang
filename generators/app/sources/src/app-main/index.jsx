@@ -8,12 +8,12 @@ export { default as reducer } from './reducers';
 
 export function connect(
   mapStateToProps = () => ({}),
-  mapDispatchToProps,
+  mapDispatchToProps
 ) {
   return reduxConnect(
     state => mapStateToProps({
-      ...state[meta.id],
+      ...state[meta.id]
     }),
-    mapDispatchToProps,
+    mapDispatchToProps
   );
 }

@@ -6,5 +6,5 @@ import history from '../history';
 
 export default applyMiddleware(
   routerMiddleware(history),
-  promiseMiddleware,
+  promiseMiddleware
 );

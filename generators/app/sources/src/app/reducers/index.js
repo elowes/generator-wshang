@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
 
-import { meta as testMeta, reducer as testReducer } from '../../app-test';
+import { meta as mainMeta, reducer as mainReducer } from '../../app-main';
 
 const rootReducer = combineReducers({
-  [testMeta.id]: testReducer,
+  [mainMeta.id]: mainReducer
 });
 
 export default rootReducer;

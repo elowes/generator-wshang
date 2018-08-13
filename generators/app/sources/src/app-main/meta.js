@@ -1,3 +1,3 @@
 export default {
-  id: 'test',
+  id: 'main'
 };
