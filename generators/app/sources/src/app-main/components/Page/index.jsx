@@ -12,7 +12,7 @@ import styles from './index.scss';
   state => ({ ...state }),
   dispatch => ({ dispatch, actions: bindActionCreators(bindActions, dispatch) })
 )
-export default class Page extends PureComponent {
+class Page extends PureComponent {
   static propTypes = {
     actions: PropTypes.shape({
       loadData: PropTypes.func,
@@ -36,3 +36,5 @@ export default class Page extends PureComponent {
     );
   }
 }
+
+export default Page;

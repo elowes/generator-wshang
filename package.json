@@ -1,6 +1,6 @@
 {
   "name": "generator-wshang",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "react",
   "main": "index.js",
   "scripts": {},
@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/elowes/generator-wshang#readme",
   "dependencies": {
-    "yeoman-generator": "^3.1.0"
+    "yeoman-generator": "^3.1.1"
   }
 }
