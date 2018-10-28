@@ -1,5 +1,5 @@
-import createActions from '../../app/actions';
-import meta from '../meta';
+import createActions from '../app/actions';
+import meta from './meta';
 
 export default createActions(meta.id, {
   async loadData(type) {

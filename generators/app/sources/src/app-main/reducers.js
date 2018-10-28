@@ -1,7 +1,7 @@
 import { handleActions } from 'redux-actions';
 import { LOCATION_CHANGE } from 'connected-react-router';
 
-import actions from '../actions';
+import actions from './actions';
 
 const initialState = {
   res: 'loading...'

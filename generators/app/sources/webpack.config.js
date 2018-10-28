@@ -55,7 +55,6 @@ config.module.rules = config.module.rules.concat([
   }
 ])
 config.entry = {
-  vendor: './vendor',
   // login: './login',
   index: './app'
 },
@@ -80,17 +79,17 @@ config.plugins.push(
 );
 config.optimization = {
   splitChunks: {
+    chunks: 'all',
     cacheGroups: {
       default: false,
-      vendors: false,
       vendor: {
+        test: /[\\/]node_modules[\\/]/,
         name: 'vendor',
-        test: 'vendor',
-        chunks: 'all',
-        enforce: true
-      }
+        priority: 10,
+        enforce: true,
+      },
     }
   }
-}
+},
 
 module.exports = config;
